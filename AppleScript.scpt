@@ -7,7 +7,6 @@ tell application "Mail"
 	check for new mail
 
 	delay 1
-  	*change 'AppleScript' to smartbox or inbox and 'Apple' to account name ( ie Gmail or icloud etc )*
 	set unreadMessages to (get every message of mailbox "AppleScript" of account "Apple" whose read status is false)
 
 	repeat with eachMessage in unreadMessages
